@@ -1,99 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <!--Shop name-->
-    <TextView
-        android:id="@+id/ShopName"
-        android:layout_width="wrap_content"
+    <!--Top half-->
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:fontFamily="casual"
-        android:text="Owl's Shop"
-        android:textSize="45dp"
-        android:textStyle="bold" />
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--Shop name-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Owl's Shop"
+            android:textSize="45dp"
+            android:textStyle="bold" />
 
-    <!--ShopPhoto-->
-    <ImageView
-        android:id="@+id/ShopPhoto"
+        <!--ShopPhoto-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/photo" />
+
+        <!--Description of business-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="casual"
+            android:text="Selling Toy Owl's Since 1574!"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <!--Horizontal line-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+    </LinearLayout>
+
+    <!--Bottom half-->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="255dp"
-        android:layout_below="@id/ShopName"
-        android:src="@drawable/photo" />
-
-    <!--Description of business-->
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/ShopPhoto"
-        android:layout_centerInParent="true"
-        android:layout_margin="16dp"
-        android:fontFamily="casual"
-        android:text="Selling Toy Owl's Since 1574!"
-        android:textSize="20dp"
-        android:textStyle="bold" />
+        android:layout_below="@+id/top"
+        android:orientation="horizontal"
 
-    <!--Contact information-->
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/visitUs"
-        android:layout_alignBottom="@+id/visitUs"
-        android:layout_marginStart="16dp"
-        android:layout_toEndOf="@+id/button"
-        android:fontFamily="casual"
-        android:text="Owl's Shop \nA.M. Keldisha 16 \nRiga, LV-1021 \n555-765-5555 \nwww.owls-shop.lv"
-        android:textSize="16dp"
-        android:textStyle="bold" />
+        >
 
-    <!--Buttons-->
-    <Button
-        android:id="@+id/visitUs"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/description"
-        android:layout_margin="8dp"
-        android:background="@drawable/button"
-        android:fontFamily="casual"
-        android:onClick="visitUs"
-        android:text="Visit Us"
-        android:textSize="16dp"
-        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/buyowl"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/visitUs"
-        android:layout_margin="8dp"
-        android:background="@drawable/button"
-        android:fontFamily="casual"
-        android:onClick="buyOwl"
-        android:text="Buy Toy Owl"
-        android:textSize="16dp"
-        android:textStyle="bold" />
+        <!--Buttons-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buyowl"
-        android:layout_margin="8dp"
-        android:background="@drawable/button"
-        android:fontFamily="casual"
-        android:onClick="feedOwl"
-        android:text="Feed Real Owl"
-        android:textSize="16dp"
-        android:textStyle="bold" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button"
+                android:fontFamily="casual"
+                android:onClick="visitUs"
+                android:text="Visit Us"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button"
+                android:fontFamily="casual"
+                android:onClick="buyOwl"
+                android:text="Buy Toy Owl"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/button"
+                android:fontFamily="casual"
+                android:onClick="feedOwl"
+                android:text="Feed Real Owl"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--Contact information-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:fontFamily="casual"
+                android:text="Contacts: \nOwl's Shop \nA.M. Keldisha 16 \nRiga, LV-1021 \n555-765-5555 \nwww.owls-shop.lv"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>
 
