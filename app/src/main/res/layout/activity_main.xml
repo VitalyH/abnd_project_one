@@ -18,7 +18,7 @@
             style="@style/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"  />
+            android:text="@string/app_name" />
 
         <!--ShopPhoto-->
         <ImageView
@@ -40,7 +40,6 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@android:color/darker_gray" />
-
     </LinearLayout>
 
     <!--Bottom half-->
@@ -49,8 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/top"
         android:orientation="horizontal"
-
-        >
+        android:baselineAligned="false">
 
 
         <!--Buttons-->
@@ -65,7 +63,8 @@
                 style="@style/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/small"
+                android:layout_marginTop="@dimen/big"
+                android:layout_marginStart="@dimen/big"
                 android:background="@drawable/button"
                 android:onClick="visitUs"
                 android:text="@string/visit" />
@@ -74,7 +73,8 @@
                 style="@style/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/small"
+                android:layout_marginTop="@dimen/small"
+                android:layout_marginStart="@dimen/big"
                 android:background="@drawable/button"
                 android:onClick="buyOwl"
                 android:text="@string/buy" />
@@ -83,11 +83,12 @@
                 style="@style/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/small"
+                android:layout_marginTop="@dimen/small"
+                android:layout_marginStart="@dimen/big"
                 android:background="@drawable/button"
                 android:onClick="feedOwl"
                 android:text="@string/feed" />
-            </LinearLayout>
+        </LinearLayout>
 
         <!--Contact information-->
         <LinearLayout
@@ -98,8 +99,8 @@
             android:orientation="vertical">
 
             <TextView
-                style="@style/button"
                 android:id="@+id/textView"
+                style="@style/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/small"
