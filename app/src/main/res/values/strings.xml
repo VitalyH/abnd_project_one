@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Owl\'s Shop</string>
+    <string name="description">Selling Toy Owl\'s Since 1574!</string>
+    <string name="visit">Visit Us</string>
+    <string name="buy">Buy Toy Owl</string>
+    <string name="feed">Feed Real Owl</string>
+    <string name="contacts">CONTACTS: \nOwl\s Shop \nA.M. Keldisha 16 \nRiga, LV-1021 \n555-765-5555 \nwww.owls-shop.lv</string>
 </resources>

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -14,14 +12,13 @@
         android:layout_alignParentTop="true"
         android:gravity="center"
         android:orientation="vertical">
+
         <!--Shop name-->
         <TextView
+            style="@style/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="casual"
-            android:text="Owl's Shop"
-            android:textSize="45dp"
-            android:textStyle="bold" />
+            android:text="@string/app_name"  />
 
         <!--ShopPhoto-->
         <ImageView
@@ -32,13 +29,11 @@
 
         <!--Description of business-->
         <TextView
+            style="@style/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:fontFamily="casual"
-            android:text="Selling Toy Owl's Since 1574!"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:layout_margin="@dimen/big"
+            android:text="@string/description" />
 
         <!--Horizontal line-->
         <View
@@ -67,38 +62,32 @@
             android:orientation="vertical">
 
             <Button
+                style="@style/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/small"
                 android:background="@drawable/button"
-                android:fontFamily="casual"
                 android:onClick="visitUs"
-                android:text="Visit Us"
-                android:textSize="16dp"
-                android:textStyle="bold" />
+                android:text="@string/visit" />
 
             <Button
+                style="@style/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/small"
                 android:background="@drawable/button"
-                android:fontFamily="casual"
                 android:onClick="buyOwl"
-                android:text="Buy Toy Owl"
-                android:textSize="16dp"
-                android:textStyle="bold" />
+                android:text="@string/buy" />
 
             <Button
+                style="@style/button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/small"
                 android:background="@drawable/button"
-                android:fontFamily="casual"
                 android:onClick="feedOwl"
-                android:text="Feed Real Owl"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:text="@string/feed" />
+            </LinearLayout>
 
         <!--Contact information-->
         <LinearLayout
@@ -109,14 +98,12 @@
             android:orientation="vertical">
 
             <TextView
+                style="@style/button"
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:fontFamily="casual"
-                android:text="Contacts: \nOwl's Shop \nA.M. Keldisha 16 \nRiga, LV-1021 \n555-765-5555 \nwww.owls-shop.lv"
-                android:textSize="16dp"
-                android:textStyle="bold" />
+                android:layout_margin="@dimen/small"
+                android:text="@string/contacts" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
