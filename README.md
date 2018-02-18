@@ -3,7 +3,7 @@ Android Basics Nanodegree Program Project One
 
 Task: design and implement a single screen app that displays information about a small business that you are closely familiar with.
 
-My comment: I choose to implement app for fictional business. Photo is mine. Owls too!
+My comment: I choose to implement an app for fictional business. The photo is mine. Owls are too! 
 
 PROJECT SPECIFICATION
 
