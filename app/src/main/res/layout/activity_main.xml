@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,28 +10,40 @@
 
     <!--Shop name-->
     <TextView
+        android:id="@+id/ShopName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Owl's Shop"
+        android:textSize="45dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"  />
 
     <!--ShopPhoto-->
     <ImageView
+        android:id="@+id/ShopPhoto"
+        android:layout_below="@id/ShopName"
+        android:src="@drawable/photo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="255dp" />
 
     <!--Description of business-->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_below="@id/ShopPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Selling Toy Owl's Since 1888!"
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_margin="16dp"/>
 
     <!--Contact information-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-</LinearLayout>
+</RelativeLayout>
 
