@@ -1,6 +1,8 @@
 # abnd_project_one
 Android Basics Nanodegree Program Project One
 
+!!! See /Screenshots folder! !!!
+
 Task: design and implement a single screen app that displays information about a small business that you are closely familiar with.
 
 My comment: I choose to implement an app for fictional business. The photo is mine. Owls are too! 
